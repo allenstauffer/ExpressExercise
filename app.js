@@ -83,13 +83,13 @@ app.post('/register', (req, res) => {
     {
         res.send("No Username and Email Sent");
     }
-    else if(req.query.studentId == undefined)
+    else if(req.query.username == undefined)
     {
-         res.send("No Student Id Sent");
+         res.send("No Username Sent");
     }
-    else if(req.query.grade == undefined)
+    else if(req.query.email == undefined)
     {
-        res.send("No Grade Sent");
+        res.send("No Email Sent");
     }
     //would normally add in an email check to make sure the email is valid.
     //this is where it would write to the database

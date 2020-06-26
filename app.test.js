@@ -88,7 +88,7 @@ describe('Sample Test', () => {
     })
 
     it('Register', async () => {
-      var test = await request(app).post('/grades?username=fakename&email=fakeemail@email.com').expect(200);
+      var test = await request(app).post('/register?username=fakename&email=fakeemail@email.com').expect(200);
       expect(test.text).toEqual("Success")
       
     })
